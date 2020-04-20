@@ -25,6 +25,7 @@ public class ExternalStorageDemo extends AppCompatActivity {
     EditText inputtxt;
     Button store,read;
     String txtdata=" ";
+
     private static boolean isExternalStorageReadOnly() {
         String extStorageState = Environment.getExternalStorageState();
         if (Environment.MEDIA_MOUNTED_READ_ONLY.equals(extStorageState)) {
@@ -106,6 +107,7 @@ public class ExternalStorageDemo extends AppCompatActivity {
                 }inputtxt.setText(" ");
                 tv.setText(" ");
                 Toast.makeText(ExternalStorageDemo.this,"Current data is stored in filestorage.txt in folder folderinEXTStorage in the External Storage",Toast.LENGTH_SHORT).show();
+
 
 
             }

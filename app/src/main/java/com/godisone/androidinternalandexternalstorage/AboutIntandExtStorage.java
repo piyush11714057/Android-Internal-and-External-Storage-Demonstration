@@ -15,24 +15,25 @@ TextView tv;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_intand_ext_storage);
         tv= findViewById(R.id.tvdemo);
-        String s=" Android offers a few structured ways to store data. These include\n" +
+        String s=" The Android offers some  ways to store the user's data. They include\n" +
                 "\n" +
                 "1. Shared Preferences\n" +
                 "2. Internal Storage\n" +
                 "3. External Storage\n" +
                 "4. SQLite Storage\n" +
                 "5. Storage via Network Connection(on cloud) \n"+
-                "But this app is limited to Android Internal Storage and External Storage \n \n \n"+
+                "But this app is limited to Android Internal Storage and External Storage. \n \n \n"+
                 "Android Internal Storage\n" +
-                "Android Internal storage is the storage of the private data on the device memory. By default, saving and loading files to the internal storage are private to the application and other applications will not have access to these files." +
-                " When the user uninstalls the applications the internal stored files associated with the application are also removed. However, note that some users root their Android phones, gaining superuser access. These users will be able to read and write whatever files they wish \n" +
+                "This storage is of the private data on the phone memory. Saving and loading of the files in the internal storage are private to the app, and other apps can't access  these files." +
+                " When our user uninstalls the app. The internal storage files associated with the app are removed along with the app.But, when users root their Android phones, they gain extra access, with the reducued security so, These users could access, read, write any files they wosh in their phones. \n" +
                 "Android External Storage\n" +
-                "External storage such as SD card can also store application data, there’s no security enforced upon files you save to the external storage.\n" +
-                "In general there are two types of External Storage:\n" +
+                "Storages such as a SD card is also useful to stor app's info and data of the user \n" +
+                "There are 2 kinds of External Storages:\n" +
 
                 " \n" +
-                "Primary External Storage: In built shared storage which is “accessible by the user by plugging in a USB cable and mounting it as a drive on a host computer”. Example: When we say Nexus 5 32 GB.\n" +
-                "Secondary External Storage: Removable storage. Example: SD Card"
+                "Primary Ext Storage: In built shared storage which is “accessible by the user by plugging in a USB cable and mounting it as a drive on a host computer”." +
+                " Example: When we say something like Xiaomi redmi note 4  64 GB.\n" +
+                "Secondary Ext Storage: These are Removable storage. Example: SD Cards of 4,8,16,... GB"
                 ;
         tv.setText(s);
     }
