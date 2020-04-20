@@ -10,6 +10,7 @@
         android:layout_height="wrap_content"
         android:padding="5dp"
         android:textSize="30sp"
+        android:layout_marginTop="80dp"
         android:id="@+id/tv1"
         android:text="Read and Write in Internal Storage demo"
         android:gravity="center_horizontal"

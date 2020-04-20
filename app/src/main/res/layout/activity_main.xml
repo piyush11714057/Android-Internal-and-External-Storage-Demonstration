@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" tools:context=".MainActivity"
-    android:background="@drawable/bg"
+    android:background="#7CF6EB"
     >
     <TextView
         android:id="@+id/tv"
@@ -13,37 +13,37 @@
         android:layout_marginTop="85dp"
         android:fontFamily="sans-serif-condensed"
         android:gravity="center"
-        android:textColor="#20B2AA"
+        android:textColor="#F6AD7C"
         android:text="Internal and external storage Demo App"
         android:textSize="40dp"
         android:textStyle="bold" />
 
     <Button
         android:id="@+id/btn_definitions"
-        android:layout_width="wrap_content"
+        android:layout_width="260dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/tv"
-        android:layout_alignRight="@+id/tv"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/tv"
         android:layout_marginTop="46dp"
         android:text="Definitions I/E Storage" />
 
     <Button
         android:id="@+id/btn_internal_Storage"
-        android:layout_width="wrap_content"
+        android:layout_width="260dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btn_definitions"
-        android:layout_alignRight="@+id/btn_definitions"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/btn_definitions"
         android:layout_marginTop="29dp"
         android:text="Internal Storage Demo" />
 
     <Button
         android:id="@+id/btn_external_storage"
-        android:layout_width="wrap_content"
+        android:layout_width="260dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btn_internal_Storage"
-        android:layout_alignRight="@+id/btn_internal_Storage"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/btn_internal_Storage"
         android:layout_marginTop="25dp"
         android:text="External Storage Demo"  />

@@ -2,6 +2,7 @@ package com.godisone.androidinternalandexternalstorage;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,6 +28,11 @@ public class InternalStorageDemo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getSupportActionBar().hide();
+//        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+//                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_internal_storage_demo);
         txt=findViewById(R.id.et1);
         tv=findViewById(R.id.tv_read);
@@ -57,7 +63,7 @@ public class InternalStorageDemo extends AppCompatActivity {
 
     public void Write(View view) {
         try{
-            FileOutputStream fileOutputStream= openFileOutput("iternalstoragefile.txt",MODE_PRIVATE);
+            FileOutputStream fileOutputStream= openFileOutput("iternalstoragefile.txt",MODE_APPEND);
             OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream);
             String ss= txt.getText().toString();
             txt.setText("");

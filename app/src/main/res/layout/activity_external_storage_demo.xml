@@ -11,8 +11,9 @@
         android:layout_height="wrap_content"
         android:padding="5dp"
         android:textSize="30sp"
+
         android:id="@+id/tv1e"
-        android:text="Read and Write in Internal Storage demo"
+        android:text="Read and Write in External  Storage demo"
         android:gravity="center_horizontal"
         />
     <EditText
@@ -30,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_reade"
-        android:onClick="Read"
+
         android:layout_alignRight="@id/et1e"
         android:layout_alignEnd="@id/et1e"
         android:layout_below="@+id/et1e"
@@ -45,7 +46,6 @@
         android:layout_height="wrap_content"
         android:text="Store"
         android:id="@+id/btn_writee"
-        android:onClick="Write"
         android:layout_alignLeft="@id/et1e"
         android:layout_alignStart="@id/et1e"
         android:layout_below="@+id/et1e"

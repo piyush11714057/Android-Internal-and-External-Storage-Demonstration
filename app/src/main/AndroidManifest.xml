@@ -12,9 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ExternalStorageDemo"></activity>
+        <activity android:name=".AboutIntandExtStorage"></activity>
+        <activity android:name=".ExternalStorageDemo" />
         <activity android:name=".InternalStorageDemo" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

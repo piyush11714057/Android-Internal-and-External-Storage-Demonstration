@@ -3,6 +3,7 @@ package com.godisone.androidinternalandexternalstorage;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -47,6 +48,11 @@ public class ExternalStorageDemo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getSupportActionBar().hide();
+//        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+//                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_external_storage_demo);
         inputtxt=findViewById(R.id.et1e);
         tv=findViewById(R.id.tv_reade);
@@ -88,7 +94,7 @@ public class ExternalStorageDemo extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 try {
-                    FileOutputStream fileOutputStream= new FileOutputStream(myFile);
+                    FileOutputStream fileOutputStream= new FileOutputStream(myFile,true);
                     fileOutputStream.write(inputtxt.getText().toString().getBytes());
                     fileOutputStream.close();
 
@@ -104,7 +110,6 @@ public class ExternalStorageDemo extends AppCompatActivity {
 
             }
         });
-
 
 
 

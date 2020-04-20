@@ -2,7 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg">
-
+    android:background="#7CF6EB">
+    <TextView
+        android:id="@+id/tvv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:textColor="#F6AD7C"
+        android:text="Internal and External storage  Demonstrtion App"
+        android:textSize="50dp"
+        android:textStyle="bold" />
 
 </LinearLayout>
