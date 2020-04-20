@@ -1,6 +1,8 @@
 package com.godisone.androidinternalandexternalstorage;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +19,28 @@ public class MainActivity extends AppCompatActivity {
         b1=findViewById(R.id.btn_definitions);
         b2=findViewById(R.id.btn_internal_Storage);
         b3=findViewById(R.id.btn_external_storage);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent= new Intent(MainActivity.this, InternalStorageDemo.class);
+
+                startActivity(intent);
+
+            }
+        });
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
 
     }
